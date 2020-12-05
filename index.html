@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> Страница о себе </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <h1>Подарите вашему ребенку новогоднее волшебство</h1>
+
+    <div class="forms">
+        <h2 class="write">ОСТАВЬТЕ ЗАЯВКУ</h2>
+        <form method="POST" action="php/index.php" class="form">
+            <div class="form_field">
+                <label class="control_label" for="field_name">Ваше имя </label><br>
+                <input class="field" type="text" name="first_name" id="field_name" value=" " required maxlength=255 />
+            </div>
+            <div class="form_field">
+                <label class="control_label" for="field_email">Ваш номер телефона </label><br>
+                <input id="field_email" class="field" type="text" name="phone_number" value=" " required maxlength=255 />
+            </div>
+            <input type="submit" value="Отправить" class="button_send">
+        </form>
+    </div>
+    <div class="images">
+        <div class="img_one">
+            <img src="images/one.jpg" class="one">
+        </div>
+        <div>
+            <img src="images/three.jpg" class="three">
+        </div>
+    </div>
+</body>
+</html>
